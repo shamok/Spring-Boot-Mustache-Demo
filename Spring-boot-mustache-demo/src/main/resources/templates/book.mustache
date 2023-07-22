@@ -1,0 +1,29 @@
+{{>header}}
+
+<h1>Mustache with Spring boot</h1>
+<div><b>Book List</b></div>
+
+<table>
+    <thead>
+    <tr>
+        <th>Book ID</th>
+        <th>ISBN #</th>
+        <th>Book Title</th>
+        <th>Author</th>
+        <th>Price</th>
+    </tr>
+    </thead>
+    <tbody>
+    {{#bookList}}
+        <tr>
+            <td>{{bookId}}</td>
+            <td>{{isbnNo}}</td>
+            <td>{{bookTitle}}</td>
+            <td>{{author}}</td>
+            <td>{{price}}</td>
+        </tr>
+    {{/bookList}}
+    </tbody>
+</table>
+
+{{>footer}}
